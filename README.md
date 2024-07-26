@@ -76,6 +76,12 @@ To get started, simply follow the provided commands to update and upgrade your T
 ```
 apt update -y && apt upgrade -y && pkg install git -y && git clone https://github.com/DreamHacker112/TermuX-Custom.git && cd TermuX-Custom && chmod +x * && bash setup.sh 
 ```
+## Delete TermuX-Custom
+```
+cd && rm -rf TermuX-Custom
+cd /data/data/com.termux/files/usr/etc
+rm -rf bash.bashrc dbus-1 bash_completion.d login.sh krb5.conf mpv pulse ssh
+```
 ## Copyright Notice
 
 All content, including but not limited to code, documentation, and assets, within the TermuX Custom repository is protected under copyright law. This repository, authored by {Dream Hacker}  is provided for educational purposes only. It does not promote or condone any unauthorized access, modification, or misuse of computer systems or networks.
