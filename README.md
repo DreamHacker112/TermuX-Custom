@@ -27,7 +27,7 @@ TermuX Custom is a GitHub repository designed to empower users to personalize th
 > These features enhance the TermuX interface, providing users with a personalized and dynamic experience for their TermuX sessions.
 
 ## Available on:
- Termux
+ * Termux
 
 ## INSTALLATION [Termux] :
 
@@ -49,7 +49,7 @@ apt update -y && apt upgrade -y && pkg install git -y && git clone https://githu
 ```
 ## Delete TermuX-Custom
 ```
-Coming soon
+cd TermuX-Custom && && default.sh
 ```
 ## Warning
 This tool is only for educational purpose. If you use this tool for other purposes except education we will not be responsible in such cases.
