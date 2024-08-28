@@ -28,35 +28,18 @@ TermuX Custom is a GitHub repository designed to empower users to personalize th
  Termux
 
 ## INSTALLATION [Termux] :
-[-] Update and Upgarde your package lists with to latest versions:
-    ```
-    apt update -y && apt upgrade -y
-    ```
 
-[-] Install Github in Termux
-    ```
-    pkg install git -y
-    ```
-    
-[-] Clone the TermuX-Custom repository in your Termux:
-    ```
-    git clone https://github.com/DreamHacker112/TermuX-Custom.git
-    ```
+* `apt update -y && apt upgrade -y`
 
-[-] Navigate to the cloned repository directory:
-    ```
-    cd TermuX-Custom
-    ```
+* `pkg install git -y`
 
-[-] Add execute permissions to all files in the directory:
-    ```
-    chmod +x *
-    ```
+* `git clone https://github.com/DreamHacker112/TermuX-Custom.git`
 
-[-] Execute the setup script to apply customizations:
-    ```
-    bash setup.sh
-    ```
+* `cd TermuX-Custom`
+
+* `chmod +x *`
+
+* `bash setup.sh`
 
 ## All Commands in Single Line
 ```
