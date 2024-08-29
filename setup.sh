@@ -26,7 +26,6 @@ apt install figlet -y
 apt install ruby -y 
 apt install mpv -y 
 pip install lolcat 
-pip install random 
 pip install requests 
 pkg install python2 -y 
 pkg install termux-api -y 
