@@ -70,4 +70,4 @@ fi
 choice="y"
 update_repository
 bash login.sh
-￼Enter
+Enter
