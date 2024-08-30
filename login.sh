@@ -83,4 +83,3 @@ echo -e "\033[1m\e[1;32m Your Termux is \033[33mReady \n
        So please \033[31mExit \033[37mand \033[32mLogin.\e[0m"
 echo
 echo
-￼Enter
