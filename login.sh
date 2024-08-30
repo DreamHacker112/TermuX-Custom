@@ -13,7 +13,7 @@ cd ..
 cd usr/etc                                       
 rm motd                                           
 rm bash.bashrc                                       
-cat <<LOGIN>bash.bashrc                            
+cat <<LOGIN > bash.bashrc                            
 
 trap '' 2                                          
 echo -e "\e[1;32m      
@@ -41,16 +41,17 @@ echo -e "\e[1;32m
 echo
 read -p $'       \e[33m\033[1m\033[33m[\033[31m+\033[33m] \033[37mINPUT \033[33mUSERNAME FOR LOGIN:\033[32m ' user
 read -s -p $'       \e[32m\033[1m\033[33m[\033[31m+\033[33m] \033[37mINPUT \033[33mPASSWORD FOR LOGIN:\033[33m ' pass                                                
-if [[ \$pass == $password && \$user == $username ]]; then
-sleep 3
-clear
-cd $HOME
-cd TermuX-Custom
-cd Song
-python sound_effect.py
-clear
-cd $HOME 
-echo -e "\033[1m\033[33m
+echo
+if [[ "$pass" == "$password" && "$user" == "$username" ]]; then
+    sleep 3
+    clear
+    cd $HOME
+    cd TermuX-Custom
+    cd Song
+    python sound_effect.py
+    clear
+    cd $HOME 
+    echo -e "\033[1m\033[33m
 
 
 ██╗  ██╗ █████╗  ██████╗██╗  ██╗███████╗██████╗ 
@@ -61,38 +62,17 @@ echo -e "\033[1m\033[33m
 ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝                                                                    
 
 "
-echo -e  "     \e[1m\e[32m▂▃▄▅▆▇▓▒░ \033[1mCoded By \e[33mDreamHacker \e[1m\e[32m░▒▓▇▆▅▄▃▂"
-cd $HOME
-echo -e "   \033[1m\033[33m]\033[31m───────────────────────────────────────────\033[33m["
-echo 
-PS1='\[\033[1;92m\]┌[\[\033[1;91m\]$names\[\033[1;92m\]]──[\[\033[1;94m\]\w\[\033[1;92m\]]\[\033[38;5;118m\]$(git branch 2>/dev/null | grep -e '\''^\*'\'' | sed -E '\''s/^\* (.*)/ [\1]/'\'')\n\[\033[1;92m\]├─[\[\033[1;93m\]\#\[\033[1;92m\]]─>\[\033[1;96m\] '
-<< comment
-shopt -s checkwinsize
-shopt -s autocd
-shopt -s cdspell
-shopt -s checkhash
-shopt -s compat31
-shopt -s compat32
-shopt -s compat40
-shopt -s compat41
-shopt -s no_empty_cmd_completion
-shopt -s histverify
-shopt -s histappend
-shopt -s dirspell
-shopt -s direxpand
-shopt -s compat43
-shopt -s compat32
-shopt -s lithist
-comment
-cd $HOME
-cd TermuX-Custom
-cd
+    echo -e  "     \e[1m\e[32m▂▃▄▅▆▇▓▒░ \033[1mCoded By \e[33mDreamHacker \e[1m\e[32m░▒▓▇▆▅▄▃▂"
+    cd $HOME
+    echo -e "   \033[1m\033[33m]\033[31m───────────────────────────────────────────\033[33m["
+    echo 
+    PS1='\[\033[1;92m\]┌[\[\033[1;91m\]$names\[\033[1;92m\]]──[\[\033[1;94m\]\w\[\033[1;92m\]]\[\033[38;5;118m\]$(git branch 2>/dev/null | grep -e '\''^\*'\'' | sed -E '\''s/^\* (.*)/ [\1]/'\'')\n\[\033[1;92m\]├─[\[\033[1;93m\]\#\[\033[1;92m\]]─>\[\033[1;96m\] '
 else
-echo ""
-echo -e "\e[1;31m  You Entered wrong Details! 
+    echo ""
+    echo -e "\e[1;31m  You Entered wrong Details! 
 \e[0m"
-sleep 1
-cmatrix -L
+    sleep 1
+    cmatrix -L
 fi
 trap 2
 LOGIN
