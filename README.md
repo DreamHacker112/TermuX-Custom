@@ -22,7 +22,6 @@ TermuX Custom is a GitHub repository designed to empower users to personalize th
 - [x] Interactive Terminal
 - [X] Easy To Use
 - [X] Easy To Install
-- [X] In Terminal Clock
 - [X] Looks OverPowered
 > These features enhance the TermuX interface, providing users with a personalized and dynamic experience for their TermuX sessions.
 
